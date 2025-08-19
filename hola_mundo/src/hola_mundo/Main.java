@@ -3,16 +3,9 @@ package hola_mundo;
 public class Main {
 
     public static void main(String[] args) { 
-        
-        Object objeto = new Gato();
+        Almacen <String>almacen= new Almacen();
+        almacen.setDato("Hola");
 
-        if(objeto instanceof Pato){
-            Pato pato = (Pato)objeto;
-            pato.hacerRuido();
-        }
-
-        if (objeto instanceof Gato) {
-            System.out.println("Es un gato");
-        }
+        String dato = almacen.getDato();
    }
 }
